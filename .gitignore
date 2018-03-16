@@ -1,0 +1,11 @@
+# Composer
+/vendor/
+
+# Phpstorm
+.idea
+
+# Mac
+/.DS_Store
+
+# Meld
+.org

@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$SiwecoApplication = new Application('siwecos', '0.0.1');
+$SiwecoApplication->add(new Siwecos\SiwecosClientCommand());
+$SiwecoApplication->add(new Siwecos\SiwecosCreateConfigCommand());
+
+try {
+    $SiwecoApplication->run();
+} catch (\Exception $e) {
+};
